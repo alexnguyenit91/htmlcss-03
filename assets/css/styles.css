@@ -32,6 +32,12 @@ a {
     background: var(--header-bg);
 }
 
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
     display: inline-flex;
     position: relative;
@@ -76,4 +82,16 @@ a {
 .logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+
+/* Header navbar */
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 4px 21px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #c9d2da;
 }
