@@ -5,6 +5,7 @@
 :root {
     --primary-color: #2e80ce;
     --header-bg: #10375c;
+    --height-btn: 60px;
 }
 
 html {
@@ -20,6 +21,26 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    display: inline-block;
+    min-width: 205px;
+    height: var(--height-btn);
+    padding: 0px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 99px;
+    background: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: var(--height-btn);
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -29,6 +50,7 @@ a {
 /* Header */
 .header {
     min-height: 100vh;
+    padding-top: 30px;
     background: var(--header-bg);
 }
 
@@ -89,9 +111,112 @@ a {
     display: flex;
 }
 
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #c9d2da;
+}
+
+.navbar__link:hover,
+.navbar__item--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #ffffff;
+}
+
+.navbar__item--active::before {
+    position: relative;
+    left: -8px;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
+    height: 44px;
+    min-width: 104px;
+    line-height: 44px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
 }
