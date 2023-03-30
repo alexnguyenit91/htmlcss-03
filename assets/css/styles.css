@@ -21,6 +21,14 @@ a {
     text-decoration: none;
 }
 
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .btn {
     display: inline-block;
     min-width: 205px;
@@ -143,6 +151,7 @@ a {
 }
 
 .logo__brand {
+    font-family: "Sora", sans-serif;
     display: block;
     font-size: 1.8em;
     font-weight: 400;
@@ -656,6 +665,7 @@ a {
 /* Appointment */
 .appointment {
     margin: 85px 0;
+    padding-bottom: 85px;
 }
 
 .appointment__inner {
@@ -681,4 +691,113 @@ a {
 .appointment__desc {
     width: 617px;
     margin: 0 auto 38px;
+}
+
+/* Footer */
+.footer {
+    font-family: "Open Sans", sans-serif;
+    padding: 100px 0 42px;
+    background: #10375c;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+    border-bottom: 1px solid #406181;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.footer__list {
+    margin: 20px 0px 28px;
+}
+
+.footer__link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #a9b3bb;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__list li:first-child a {
+    margin-top: 0;
+}
+
+.footer__social {
+    margin: 20px 0 28px;
+    display: flex;
+    flex-shrink: 0;
+    column-gap: 10px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: var(--primary-color);
+    background: #ffffff;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.footer__form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__form-input {
+    width: 212px;
+    height: 46px;
+    padding: 10px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9ca8b1;
+}
+
+.footer__submit {
+    min-width: 108px;
+    height: 46px;
+    margin-left: 12px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #ffffff;
+}
+
+.copyright {
+    margin-top: 28px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #aab3ba;
 }
