@@ -652,3 +652,33 @@ a {
     line-height: 18px;
     color: #10375c;
 }
+
+/* Appointment */
+.appointment {
+    margin: 85px 0;
+}
+
+.appointment__inner {
+    padding: 100px 0;
+    text-align: center;
+    background: #f7fbff;
+}
+
+.appointment__heading {
+    /* position: relative; */
+}
+
+.appointment__heading::after {
+    /* position: absolute; */
+    margin: 18px auto;
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment__desc {
+    width: 617px;
+    margin: 0 auto 38px;
+}
